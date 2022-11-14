@@ -1,4 +1,4 @@
-import React from "react";
+import "../assets/css/Login.css";
 
 const Login = () => {
   return <div>Ini Login</div>;

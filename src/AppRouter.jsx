@@ -1,7 +1,6 @@
-import React from "react";
 import { Route, Routes } from "react-router-dom";
-import JobVacancy from "./pages/JobVacancy";
-import LandingPage from "./pages/LandingPage";
+import JobVacancy from "./Pages/JobVacancy";
+import LandingPage from "./Pages/LandingPage";
 
 const AppRouter = () => {
   return (

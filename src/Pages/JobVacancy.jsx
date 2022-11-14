@@ -1,4 +1,4 @@
-import React from "react";
+import "../assets/css/JobVacancy.css";
 
 const JobVacancy = () => {
   return <div>Ini JobVacancy</div>;

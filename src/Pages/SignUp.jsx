@@ -1,4 +1,4 @@
-import React from "react";
+import "../assets/css/SignUp.css";
 
 const SignUp = () => {
   return <div>Ini SignUp</div>;
