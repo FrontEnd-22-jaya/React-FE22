@@ -1,8 +1,8 @@
 import AppRouter from "./AppRouter";
 import "./assets/css/App.css";
-import Copyright from "./components/Copyright";
-import Footer from "./components/Footer";
-import Navbar from "./components/Navbar";
+import Copyright from "./Components/Copyright";
+import Footer from "./Components/Footer";
+import Navbar from "./Components/Navbar";
 
 function App() {
   return (
