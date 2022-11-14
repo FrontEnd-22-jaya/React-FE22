@@ -1,13 +1,16 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import "./App.css";
+import AppRouter from "./AppRouter";
+import "./assets/css/App.css";
+import Copyright from "./components/Copyright";
+import Footer from "./components/Footer";
+import Navbar from "./components/Navbar";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <div className="App">
-      <h1>HOLAAAAAA</h1>
+      <Navbar />
+      <AppRouter />
+      <Footer />
+      <Copyright />
     </div>
   );
 }

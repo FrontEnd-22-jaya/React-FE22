@@ -1,0 +1,36 @@
+#copyright {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 100px;
+  align-items: center;
+}
+
+.bxs-heart {
+  color: red;
+  transition: all 0.2s ease-in-out;
+}
+.bxs-heart:hover {
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.fe-22 {
+  cursor: pointer;
+  /* border: 1px solid white; */
+  transition: all 0.5s ease-in-out;
+  padding: 8px;
+}
+.fe-22:hover {
+  color: blueviolet;
+  /* border: 1px solid blueviolet; */
+  cursor: pointer;
+  border-radius: 50px;
+}
+
+.nameTag {
+  color: rgb(221, 188, 253);
+}
+
+span {
+  font-weight: bolder;
+}
