@@ -1,7 +1,7 @@
 import "../assets/css/SignUp.css";
 
 const SignUp = () => {
-  return <div>Ini SignUp</div>;
+  return <div className="Signup">ini signup</div>;
 };
 
 export default SignUp;

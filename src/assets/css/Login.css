@@ -1,0 +1,101 @@
+/* hide footer and copyright */
+/* footer {
+  display: none;
+  opacity: 0;
+  pointer-events: none;
+  visibility: none;
+  z-index: -1;
+  overflow: hidden;
+}
+
+#copyright {
+  display: none;
+  opacity: 0;
+  pointer-events: none;
+  visibility: none;
+  z-index: -1;
+  overflow: hidden;
+} */
+
+.Login {
+  display: flex;
+  height: 100vh;
+}
+
+.section-image {
+  background: aqua;
+  flex: 1.5;
+}
+
+.section-form {
+  background: #d9b7ff;
+  flex: 1;
+}
+
+.signup {
+  display: flex;
+  justify-content: flex-end;
+  margin: 1rem;
+}
+
+.signup h4 {
+  font-weight: 300;
+  margin: 1em;
+}
+
+.signup button {
+  border-radius: 5px;
+  border: 1px solid #983bff;
+  padding: 5px 25px 5px 25px;
+  height: 40px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.signup button span {
+  font-weight: 700;
+  color: #983bff;
+}
+
+.login-form {
+  margin: 5em;
+  /* background-color: blue; */
+}
+
+.login-title h2 {
+  text-align: center;
+}
+
+.login-input {
+  /* background-color: aquamarine; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1em;
+}
+
+.input-element input {
+  width: 300px;
+  height: 35px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+
+.input-element input::placeholder {
+  /* margin-left: 5px; */
+  padding-left: 15px;
+}
+
+.input-element-button button {
+  background-color: #983bff;
+  color: white;
+  font-weight: 500;
+  font-size: 14px;
+  width: 300px;
+  height: 35px;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: grey;
+
+  z-index: 10;
+}
