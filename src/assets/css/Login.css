@@ -23,8 +23,12 @@
 }
 
 .section-image {
-  background: aqua;
   flex: 1.5;
+}
+
+.section-image img {
+  width: 100%;
+  margin-top: 100px;
 }
 
 .section-form {
@@ -44,6 +48,7 @@
 }
 
 .signup button {
+  background-color: white;
   border-radius: 5px;
   border: 1px solid #983bff;
   padding: 5px 25px 5px 25px;
@@ -75,14 +80,10 @@
 }
 
 .input-element input {
-  width: 300px;
+  width: 285px;
   height: 35px;
   margin-bottom: 15px;
   border-radius: 5px;
-}
-
-.input-element input::placeholder {
-  /* margin-left: 5px; */
   padding-left: 15px;
 }
 
@@ -98,4 +99,49 @@
   box-shadow: grey;
 
   z-index: 10;
+}
+
+@media only screen and (max-width: 768px) {
+  .section-image {
+    display: none;
+  }
+
+  .section-form {
+    max-width: 280px;
+  }
+
+  .signup {
+    margin: 0;
+    margin-right: 5px;
+  }
+
+  .signup h4 {
+    font-size: 10px;
+  }
+
+  .signup button {
+    padding: 0px 25px 5px 25px;
+    height: 25px;
+  }
+
+  .signup button span {
+    font-size: 10px;
+  }
+
+  .login-title h2 {
+    font-size: 18px;
+  }
+
+  .input-element input {
+    max-width: 150px;
+    height: 25px;
+    margin-bottom: 10px;
+    font-size: 10px;
+  }
+
+  .input-element-button button {
+    font-size: 12px;
+    max-width: 165px;
+    height: 30px;
+  }
 }
