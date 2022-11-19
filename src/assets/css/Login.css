@@ -32,7 +32,7 @@
 }
 
 .section-form {
-  background: #d9b7ff;
+  background: #d1a8ff;
   flex: 1;
 }
 
@@ -80,11 +80,11 @@
 }
 
 .input-element input {
-  width: 285px;
+  width: 270px;
   height: 35px;
   margin-bottom: 15px;
   border-radius: 5px;
-  padding-left: 15px;
+  padding-left: 30px;
 }
 
 .input-element-button button {
@@ -107,7 +107,7 @@
   }
 
   .section-form {
-    max-width: 280px;
+    max-width: 400px;
   }
 
   .signup {

@@ -60,12 +60,16 @@
   margin-top: 60px;
 }
 
-@media only screen and (max-width: 768px) {
-  .Signup {
-    max-width: 278px;
-    height: 505px;
-  }
+.bx.bx-envelope,
+.bx.bxs-phone,
+.bx.bx-key {
+  position: absolute;
+  margin-left: 10px;
+  margin-top: 10px;
+  color: #983bff;
+}
 
+@media only screen and (max-width: 768px) {
   .login {
     margin: 0;
     margin-right: 5px;
@@ -89,7 +93,7 @@
   }
 
   .signup-form {
-    margin: 30px 50px;
+    margin: 30px 100px;
   }
 
   .signup-title h2 {

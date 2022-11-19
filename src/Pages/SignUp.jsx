@@ -7,11 +7,11 @@ const SignUp = () => {
     <div className="Signup">
       <div className="login">
         <h4>already have an account?</h4>
-        <button>
-          <Link to="/login">
+        <Link to="/login">
+          <button>
             <span>Login</span>
-          </Link>
-        </button>
+          </button>
+        </Link>
       </div>
       <div className="signup-section">
         <div className="signup-form">
@@ -20,16 +20,20 @@ const SignUp = () => {
           </div>
           <div className="signup-input">
             <div className="input-element">
+              <i className="bx bx-envelope"></i>
               <input type="text" placeholder="email" />
             </div>
             <div className="input-element">
+              <i className="bx bxs-phone"></i>
               <input type="text" placeholder="phone" />
             </div>
             <div className="input-element">
-              <input type="text" placeholder="password" />
+              <i className="bx bx-key"></i>
+              <input type="password" placeholder="password" />
             </div>
             <div className="input-element">
-              <input type="text" placeholder="confirm password" />
+              <i className="bx bx-key"></i>
+              <input type="password" placeholder="confirm password" />
             </div>
             <div className="input-element-button">
               <button>Sign Up</button>

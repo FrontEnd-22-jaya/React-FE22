@@ -1,8 +1,29 @@
 import "../assets/css/Login.css";
 import loginimg from "../assets/image/login.png";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
-const Login = () => {
+const LoginTes = () => {
+  //   const initialValues = { email: "", password: "" };
+  const [form, setForm] = useState({
+    email: "",
+    password: "",
+  });
+
+  const handleChange = (e) => {
+    // console.log(e.target);
+    const nextFormState = {
+      ...form,
+      [e.target.name]: e.target.value,
+    };
+    setForm(nextFormState);
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    alert(JSON.stringify(form, null, 2));
+  };
+
   return (
     <div className="Login">
       <div className="section-image">
@@ -24,14 +45,16 @@ const Login = () => {
           <div className="login-input">
             <div className="input-element">
               <i className="bx bx-envelope"></i>
-              <input type="text" placeholder="email" />
+              <input type="text" placeholder="emailku" value={form.email} onChange={handleChange} />
             </div>
             <div className="input-element">
               <i className="bx bx-key"></i>
-              <input type="password" placeholder="password" />
+              <input type="password" placeholder="password" value={form.password} onChange={handleChange} />
             </div>
             <div className="input-element-button">
-              <button>Login</button>
+              <button type="submit" onSubmit={handleSubmit}>
+                Login
+              </button>
             </div>
           </div>
           <div className="connect-google"></div>
@@ -41,4 +64,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default LoginTes;
