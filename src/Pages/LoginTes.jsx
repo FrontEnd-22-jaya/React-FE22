@@ -1,27 +1,52 @@
 import "../assets/css/Login.css";
 import loginimg from "../assets/image/login.png";
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const LoginTes = () => {
-  //   const initialValues = { email: "", password: "" };
-  const [form, setForm] = useState({
-    email: "",
-    password: "",
-  });
+  const [email, setEmail] = useState("");
+  const [emailError, setEmailError] = useState("");
 
-  const handleChange = (e) => {
-    // console.log(e.target);
-    const nextFormState = {
-      ...form,
-      [e.target.name]: e.target.value,
-    };
-    setForm(nextFormState);
+  const [password, setPassword] = useState("");
+  const [passwordError, setPasswordError] = useState("");
+
+  const [successMsg, setSuccessMsg] = useState("");
+
+  const handleEmailChange = (e) => {
+    setEmailError("");
+    setEmail(e.target.value);
+  };
+
+  const handlePasswordChange = (e) => {
+    setPasswordError("");
+    setPassword(e.target.value);
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert(JSON.stringify(form, null, 2));
+
+    if (email !== "") {
+      //check
+      const emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+      if (emailRegex.test(email)) {
+        setEmailError("");
+      } else {
+        setEmailError("Email format doesnt valid!");
+      }
+    } else {
+      setEmailError("Email is required!");
+    }
+
+    if (password !== "") {
+      //check
+    } else {
+      setPasswordError("Password is required!");
+    }
+
+    // alert("email:" + email + " password:" + password);
+    // setEmail("");
+    // setPassword("");
+    // setIsSubmit(true);
   };
 
   return (
@@ -38,27 +63,29 @@ const LoginTes = () => {
             </button>
           </Link>
         </div>
-        <div className="login-form">
+        <form className="login-form" onSubmit={handleSubmit}>
           <div className="login-title">
             <h2>Login</h2>
           </div>
           <div className="login-input">
             <div className="input-element">
               <i className="bx bx-envelope"></i>
-              <input type="text" placeholder="emailku" value={form.email} onChange={handleChange} />
+              <input type="text" placeholder="emailku" value={email} onChange={handleEmailChange} />
+              {emailError && <div className="error-msg">{emailError}</div>}
             </div>
             <div className="input-element">
               <i className="bx bx-key"></i>
-              <input type="password" placeholder="password" value={form.password} onChange={handleChange} />
+              <input type="password" placeholder="password" value={password} onChange={handlePasswordChange} />
+              {passwordError && <div className="error-msg">{passwordError}</div>}
             </div>
             <div className="input-element-button">
-              <button type="submit" onSubmit={handleSubmit}>
-                Login
-              </button>
+              {/* <Link to="/"> */}
+              <button type="submit">Login</button>
+              {/* </Link> */}
             </div>
           </div>
           <div className="connect-google"></div>
-        </div>
+        </form>
       </div>
     </div>
   );
