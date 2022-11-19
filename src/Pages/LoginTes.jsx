@@ -1,7 +1,7 @@
 import "../assets/css/Login.css";
 import loginimg from "../assets/image/login.png";
 import { Link } from "react-router-dom";
-import { useEffect, useRef, useState } from "react";
+import { useState } from "react";
 
 const LoginTes = () => {
   const [email, setEmail] = useState("");
@@ -26,7 +26,6 @@ const LoginTes = () => {
     e.preventDefault();
 
     if (email !== "") {
-      //check
       const emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
       if (emailRegex.test(email)) {
         setEmailError("");
@@ -42,11 +41,6 @@ const LoginTes = () => {
     } else {
       setPasswordError("Password is required!");
     }
-
-    // alert("email:" + email + " password:" + password);
-    // setEmail("");
-    // setPassword("");
-    // setIsSubmit(true);
   };
 
   return (
@@ -79,9 +73,9 @@ const LoginTes = () => {
               {passwordError && <div className="error-msg">{passwordError}</div>}
             </div>
             <div className="input-element-button">
-              {/* <Link to="/"> */}
-              <button type="submit">Login</button>
-              {/* </Link> */}
+              <Link to="/">
+                <button type="submit">Login</button>
+              </Link>
             </div>
           </div>
           <div className="connect-google"></div>
