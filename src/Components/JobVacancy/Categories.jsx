@@ -1,13 +1,17 @@
 import React from "react";
+import Cate from "./Cate";
 
 const JV_Categories = () => {
   return (
-    <categories id="cate">
+    <div id="cate">
       <div id="h-cate">
         <h4>Categories</h4>
       </div>
-      <cards id="cards"></cards>
-    </categories>
+
+      <div id="categories">
+        <Cate />
+      </div>
+    </div>
   );
 };
 

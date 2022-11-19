@@ -7,6 +7,7 @@ const Navbar = () => {
       <div id="logo">
         <h3>JOBSIDIAN</h3>
       </div>
+
       <ul id="page">
         <li>
           <Link to="/">Home</Link>
@@ -14,10 +15,10 @@ const Navbar = () => {
         <li>
           <Link to="/jobVacancy">Job Vacancy</Link>
         </li>
-        {/* <li>
-          <a href="">Status</a>
-        </li>
         <li>
+          <Link to="/Status">Status</Link>
+        </li>
+        {/* <li>
           <a href="">Contact Us</a>
         </li> */}
       </ul>
