@@ -64,11 +64,7 @@ const SignUp = () => {
     setPassword2(e.target.value);
 
     if (password2 !== "") {
-      if (password === password2) {
-        setPassword2Error("");
-      } else {
-        setPassword2Error("Passwords does not match!");
-      }
+      //
     } else {
       setPassword2Error("Confirm password is required!");
     }
@@ -135,6 +131,8 @@ const SignUp = () => {
           "Content-Type": "application/json;charset=UTF-8",
         },
       });
+
+      window.location.href = "/JobVacancy";
 
       console.log("Congratulations! Your account has been successfully created!", result);
     } catch (error) {

@@ -1,8 +1,72 @@
 import "../assets/css/Login.css";
 import loginimg from "../assets/image/login.png";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 const Login = () => {
+  const [email, setEmail] = useState("");
+  const [emailError, setEmailError] = useState("");
+
+  const [password, setPassword] = useState("");
+  const [passwordError, setPasswordError] = useState("");
+
+  const [successMsg, setSuccessMsg] = useState("");
+
+  const handleEmailChange = (e) => {
+    setEmailError("");
+    setEmail(e.target.value);
+
+    if (email !== "") {
+      const emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+      if (emailRegex.test(email)) {
+        setEmailError("");
+      } else {
+        setEmailError("Email format doesnt valid!");
+      }
+    } else {
+      setEmailError("Email is required!");
+    }
+  };
+
+  const handlePasswordChange = (e) => {
+    setPasswordError("");
+    setPassword(e.target.value);
+
+    if (password !== "") {
+      //check
+    } else {
+      setPasswordError("Password is required!");
+    }
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+    if (email !== "") {
+      if (emailRegex.test(email)) {
+        setEmailError("");
+      } else {
+        setEmailError("Email format doesnt valid!");
+      }
+    } else {
+      setEmailError("Email is required!");
+    }
+
+    if (password !== "") {
+      //check
+    } else {
+      setPasswordError("Password is required!");
+    }
+
+    if (email !== "" && emailRegex.test(email) && password !== "") {
+      setEmail("");
+      setPassword("");
+
+      window.location.href = "/JobVacancy";
+    }
+  };
+
   return (
     <div className="Login">
       <div className="section-image">
@@ -17,25 +81,27 @@ const Login = () => {
             </button>
           </Link>
         </div>
-        <div className="login-form">
+        <form className="login-form" onSubmit={handleSubmit}>
           <div className="login-title">
             <h2>Login</h2>
           </div>
           <div className="login-input">
             <div className="input-element">
               <i className="bx bx-envelope"></i>
-              <input type="text" placeholder="email" />
+              <input type="text" placeholder="email" value={email} onChange={handleEmailChange} />
+              {emailError && <div className="error-msg">{emailError}</div>}
             </div>
             <div className="input-element">
               <i className="bx bx-key"></i>
-              <input type="password" placeholder="password" />
+              <input type="password" placeholder="password" value={password} onChange={handlePasswordChange} />
+              {passwordError && <div className="error-msg">{passwordError}</div>}
             </div>
             <div className="input-element-button">
-              <button>Login</button>
+              <button type="submit">Login</button>
             </div>
           </div>
           <div className="connect-google"></div>
-        </div>
+        </form>
       </div>
     </div>
   );
