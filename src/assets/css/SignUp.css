@@ -24,6 +24,10 @@
   cursor: pointer;
 }
 
+.login button:hover {
+  background-color: #5d269c;
+}
+
 .login button span {
   font-weight: 500;
   color: white;
