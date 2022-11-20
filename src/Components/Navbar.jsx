@@ -29,14 +29,16 @@ const Navbar = () => {
       </ul>
       {localStorage.getItem("user-info") ? (
         <>
-          <div id="profile">
-            <h4 id="nameProfile">
-              <i> Users</i>
-            </h4>
-            <div id="iconProfile">
-              <a href="">
-                <i className="bx bxs-user-circle"></i>
-              </a>
+          <div className="section-right">
+            <div id="profile">
+              <h4 id="nameProfile">
+                <i> Users</i>
+              </h4>
+              <div id="iconProfile">
+                <a href="">
+                  <i className="bx bxs-user-circle"></i>
+                </a>
+              </div>
             </div>
             <div className="logout-btn">
               <button>
@@ -44,11 +46,6 @@ const Navbar = () => {
               </button>
             </div>
           </div>
-          {/* <div className="logout-btn">
-            <button>
-              <span>Logout</span>
-            </button>
-          </div> */}
         </>
       ) : (
         <>
