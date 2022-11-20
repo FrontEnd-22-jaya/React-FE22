@@ -8,20 +8,20 @@ import Section_6 from "../Components/Landing Page/Section_6";
 import Navbar from "../Components/Navbar";
 
 const LandingPage = () => {
-  return <>
-  
-    <Navbar />
-    
-    <Section_1/> 
-    <Section_2/>
-    <Section_3/>
-    <Section_6/>
-    <Section_4/>
-    <Section_5/>
+  return (
+    <div className="LP_wrap">
+      <Navbar />
 
-    <img src="../namagambar" alt="" /> 
-  
-  </>
+      <Section_1 />
+      <Section_2 />
+      <Section_3 />
+      <Section_6 />
+      <Section_4 />
+      <Section_5 />
+
+      <img src="../namagambar" alt="" />
+    </div>
+  );
 };
 
 export default LandingPage;
