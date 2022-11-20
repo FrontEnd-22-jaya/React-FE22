@@ -2,6 +2,7 @@ import "../assets/css/SignUp.css";
 import loginimg from "../assets/image/signup.svg";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import Navbar from "../Components/Navbar";
 
 const SignUp = () => {
   const [email, setEmail] = useState("");
@@ -134,6 +135,9 @@ const SignUp = () => {
 
       window.location.href = "/JobVacancy";
 
+      result = await result.json();
+      localStorage.setItem("user-info", JSON.stringify(result));
+
       console.log("Congratulations! Your account has been successfully created!", result);
     } catch (error) {
       console.log("Failed!");
@@ -142,6 +146,7 @@ const SignUp = () => {
 
   return (
     <div className="Signup">
+      <Navbar />
       <div className="login">
         <h4>already have an account?</h4>
         <Link to="/login">

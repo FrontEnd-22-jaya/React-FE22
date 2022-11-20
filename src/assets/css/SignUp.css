@@ -6,7 +6,7 @@
 .login {
   display: flex;
   justify-content: flex-end;
-  padding: 1rem;
+  margin: 2rem;
 }
 
 .login h4 {
@@ -15,7 +15,7 @@
 }
 
 .login button {
-  background-color: white;
+  background-color: #983bff;
   border-radius: 5px;
   border: 1px solid #983bff;
   padding: 5px 25px 5px 25px;
@@ -25,18 +25,16 @@
 }
 
 .login button span {
-  font-weight: 700;
-  color: #983bff;
+  font-weight: 500;
+  color: white;
 }
 
 .signup-section {
   display: flex;
-  /* background-color: aqua; */
   justify-content: flex-end;
 }
 
 .signup-form {
-  /* background-color: aquamarine; */
   margin: 0px 180px;
 }
 
@@ -56,8 +54,8 @@
 }
 
 .signup-img img {
-  width: 70%;
-  margin-top: 60px;
+  width: 65%;
+  margin-top: 50px;
 }
 
 .bx.bx-envelope,

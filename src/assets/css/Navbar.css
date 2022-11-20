@@ -92,3 +92,18 @@ nav {
 .bxs-user-circle:hover {
   color: rgb(240, 211, 255);
 }
+
+.login-btn button {
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid #983bff;
+  padding: 5px 25px 5px 25px;
+  height: 40px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.logout-btn button {
+  cursor: pointer;
+  background-color: rgb(154, 93, 183);
+}
