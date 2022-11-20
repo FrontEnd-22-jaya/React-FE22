@@ -3,15 +3,15 @@ import "../assets/css/Footer.css";
 const Footer = () => {
   return (
     <footer>
-      <div id="f-about">
+      <div id="f-about" data-aos="fade-right">
         <h3 id="h-footer">About</h3>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia,
-          expedita nihil facere assumenda eos ea dolor excepturi nulla libero
-          quaerat explicabo eveniet tenetur maiores.
+          A feature to connect companies and communities affected by COVID who
+          are looking for work. companies can register as bidders and users can
+          select bidders based on their needs and educational background.
         </p>
       </div>
-      <div id="f-link">
+      <div id="f-link" data-aos="fade-up">
         <h3 id="h-footer">Link</h3>
         <ul>
           <li className="li-footer">
@@ -28,7 +28,7 @@ const Footer = () => {
           </li>
         </ul>
       </div>
-      <div id="f-contact">
+      <div id="f-contact" data-aos="fade-left">
         <h3 id="h-footer">Contact us</h3>
         <p className="p-footer">081356747675</p>
         <p className="p-footer">jobsidian@gmail.com</p>

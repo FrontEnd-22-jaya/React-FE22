@@ -1,12 +1,19 @@
 import "../assets/css/JobVacancy.css";
-import Navbar from "../Components/Navbar";
+import Categories from "../Components/JobVacancy/Categories";
+import Recommendation from "../Components/JobVacancy/Recommendation";
+import SearchBar from "../Components/JobVacancy/SearchBar";
+import Navbar from "./Components/Navbar";
+
 
 const JobVacancy = () => {
   return (
-    <div>
-      <Navbar />
-      Ini JobVacancy
-    </div>
+ <> 
+    <Navbar />
+    <div id="container">
+      <SearchBar />
+      <Categories />
+      <Recommendation />
+    </div></>
   );
 };
 
