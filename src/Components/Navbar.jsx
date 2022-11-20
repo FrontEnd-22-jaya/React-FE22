@@ -26,7 +26,7 @@ const Navbar = () => {
         </li>
         {/* <li>
           <a href="">Contact Us</a>
-        </li> */}
+        </li>
       </ul>
       {localStorage.getItem("user-info") ? (
         <>
