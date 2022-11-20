@@ -17,8 +17,9 @@ nav {
   padding: 12px 32px;
   margin-bottom: 25px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.5);
-  animation: down 1s ease-out;
-  backdrop-filter: blur(20px);
+  animation: down 3s ease-out;
+  backdrop-filter: blur(8px);
+  z-index: 10;
 }
 
 #sticky {
@@ -42,6 +43,12 @@ nav {
   gap: 12px;
 }
 
+@media (max-width: 650px) {
+  #page {
+    display: none;
+  }
+}
+
 #page li a {
   font-size: 12px;
   transition: 0.5s ease-in-out;
@@ -51,6 +58,7 @@ nav {
   padding: 8px 16px;
   transition: all 0.3s ease-in-out;
 }
+
 #page li a:hover {
   border-radius: 20px;
   background-color: rgb(206, 158, 255);

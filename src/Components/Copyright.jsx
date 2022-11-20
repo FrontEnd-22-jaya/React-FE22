@@ -9,8 +9,8 @@ const Copyright = () => {
       <a href="">
         <h3 className="nameTag fe-22">AbilKhairi</h3>
       </a>
-      <h3>
-        Crafted with <i className="bx bxs-heart"></i> by <span>JOBSIDIAN</span>
+      <h3 className="craft">
+        Crafted with <i className="bx bxs-heart"> </i> by <span>JOBSIDIAN</span>
       </h3>
       <a href="">
         <h3 className="nameTag fe-22">FarrahFahira</h3>

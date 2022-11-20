@@ -8,18 +8,57 @@ footer {
   padding: 100px;
 }
 
+/* @media (min-width: 800px) {
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-top: 25px;
+    background-color: rgb(201, 146, 255);
+    padding: 100px;
+  }
+} */
+
+@media (max-width: 400px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    /* margin-top: 25px; */
+    background-color: rgb(201, 146, 255);
+    padding: 50px;
+  }
+
+  #f-about,
+  #f-link,
+  #f-contact {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+  }
+
+  #f-link li a {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+  }
+}
+
 #h-footer {
   margin-bottom: 12px;
 }
 
 #f-about {
-  width: 200px;
+  max-width: 28ch;
+  min-width: 28ch;
 }
 
-#f-link {
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
+#f-about p {
+  text-align: justify;
 }
 
 #f-link li a {
