@@ -4,11 +4,9 @@ import JobVacancy from "./Pages/JobVacancy";
 import LandingPage from "./Pages/LandingPage";
 
 import JobDetail from "./Pages/JobDetail";
-import Status from "./Pages/Status";
 
 import Login from "./Pages/Login";
 import SignUp from "./Pages/SignUp";
-
 
 const AppRouter = () => {
   return (
@@ -21,9 +19,7 @@ const AppRouter = () => {
           <Route path="/" element={<LandingPage />} />
           <Route path="/JobVacancy" element={<JobVacancy />} />
           <Route path="/JobDetail/:id" element={<JobDetail />} />
-          <Route path="/Status" element={<Status />} />
         </Route>
-        
       </Routes>
     </>
   );

@@ -21,12 +21,6 @@ const Navbar = () => {
         <li>
           <Link to="/jobVacancy">Job Vacancy</Link>
         </li>
-        <li>
-          <Link to="/Status">Status</Link>
-        </li>
-        {/* <li>
-          <a href="">Contact Us</a>
-        </li> */}
       </ul>
       {localStorage.getItem("user-info") ? (
         <>
