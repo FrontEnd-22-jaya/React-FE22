@@ -1,12 +1,28 @@
 import "../assets/css/JobDetail.css";
 
 import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 
 const JobDetail = () => {
   const navigation = useNavigate();
+  const [isLoading, setIsLoading] = useState(false);
+  const [isApply, setIsApply] = useState(false);
 
   const handleBack = () => {
     navigation(`/JobVacancy`);
+  };
+
+  const handleCancelApplied = () => {
+    alert("are you sure want to cancel this job?");
+  };
+
+  const handleApply = () => {
+    setIsApply(!isApply);
+    setIsLoading(true);
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 1500);
+    console.log("succes apply");
   };
 
   return (
@@ -93,7 +109,17 @@ const JobDetail = () => {
             </div>
           </div>
 
-          <button id="btn-apply">Apply</button>
+          <button id="btn" onClick={handleApply}>
+            {isLoading ? (
+              <span id="btn-loading">wait a second...</span>
+            ) : isApply ? (
+              <span onClick={handleCancelApplied} id="btn-applied">
+                Applied <i className="bx bxs-check-circle"></i>
+              </span>
+            ) : (
+              <span id="btn-apply">Apply</span>
+            )}
+          </button>
         </div>
       </div>
     </>

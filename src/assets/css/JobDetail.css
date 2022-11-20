@@ -121,6 +121,10 @@
   margin-bottom: 8px;
 }
 
+#btn {
+  background-color: transparent;
+}
+
 #btn-apply {
   background-color: blueviolet;
   color: white;
@@ -130,7 +134,7 @@
   border-radius: 20px;
   display: flex;
   justify-content: flex-end;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 #btn-apply:hover {
@@ -138,4 +142,56 @@
   border: 1px solid rgb(187, 113, 255);
   color: rgb(187, 113, 255);
   cursor: pointer;
+}
+
+#btn-applied {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(87, 209, 87);
+  color: white;
+  font-weight: 700;
+  padding: 8px 32px 8px 40px;
+  border: 1px solid white;
+  border-radius: 20px;
+  display: flex;
+  justify-content: flex-end;
+  transition: all 0.3s ease-in-out;
+}
+
+@keyframes checkbox {
+  0% {
+    opacity: 0;
+    scale: 0.1;
+    /* transform: translatex(-100px); */
+  }
+  100% {
+    opacity: 1;
+    transform: translatex(1px);
+  }
+}
+
+#btn-applied .bxs-check-circle {
+  font-size: 16px;
+  margin: 4px;
+  animation: checkbox 1s ease;
+}
+
+#btn-applied:hover {
+  background-color: white;
+  border: 1px solid rgb(87, 209, 87);
+  color: rgb(87, 209, 87);
+  cursor: pointer;
+}
+
+#btn-loading {
+  background-color: blueviolet;
+  color: white;
+  font-weight: 700;
+  padding: 8px 40px;
+  border: 1px solid white;
+  border-radius: 20px;
+  display: flex;
+  justify-content: flex-end;
+  transition: all 0.2s ease-in-out;
 }

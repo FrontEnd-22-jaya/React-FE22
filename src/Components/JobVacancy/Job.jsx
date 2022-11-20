@@ -68,7 +68,7 @@ const Job = () => {
                 </div>
               </div>{" "}
               <div id="kanan">
-                <div href="#">
+                <div id="parent-btn-detail" href="#">
                   <button
                     onClick={() => handleDetail(item.id)}
                     id="btn-detail"
