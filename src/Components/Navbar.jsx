@@ -14,12 +14,12 @@ const Navbar = () => {
         <li>
           <Link to="/jobVacancy">Job Vacancy</Link>
         </li>
-        {/* <li>
+        <li>
           <a href="">Status</a>
         </li>
         <li>
           <a href="">Contact Us</a>
-        </li> */}
+        </li>
       </ul>
       <div id="profile">
         <h4 id="nameProfile">
