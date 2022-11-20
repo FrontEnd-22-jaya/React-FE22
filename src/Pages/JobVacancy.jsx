@@ -1,7 +1,13 @@
 import "../assets/css/JobVacancy.css";
+import Navbar from "../Components/Navbar";
 
 const JobVacancy = () => {
-  return <div>Ini JobVacancy</div>;
+  return (
+    <div>
+      <Navbar />
+      Ini JobVacancy
+    </div>
+  );
 };
 
 export default JobVacancy;
