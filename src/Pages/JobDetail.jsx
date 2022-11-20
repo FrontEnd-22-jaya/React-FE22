@@ -25,6 +25,24 @@ const JobDetail = () => {
     console.log("succes apply");
   };
 
+  const JOB_EP = `https://634f64bddf22c2af7b504acd.mockapi.io/jobsidian/jobs `;
+
+  const [jobs, setJobs] = useState([]);
+  const [errors, setErrors] = useState([]);
+  const [loading, setLoading] = useState(false);
+
+  async function GetDataJobs() {
+    try {
+      let resp = await axios.get(JOB_EP);
+      setJobs(resp.data);
+      setLoading(true);
+      console.log(resp.data);
+    } catch (e) {
+      setErrors(e.message);
+      console.log(e.code);
+    }
+  }
+
   return (
     <>
       <i
@@ -40,10 +58,10 @@ const JobDetail = () => {
           </div>
           <div id="jobAddress">
             <h1 id="h-posisi">
-              <b>Full Stack Developer</b>
+              <b>UI/UX Design</b>
             </h1>
             <div id="h-company">
-              <h4 id="company">Google</h4>
+              <h4 id="company">Facebook</h4>
               <h4 id="address">Sumedang</h4>
             </div>
           </div>
@@ -51,15 +69,15 @@ const JobDetail = () => {
           <div id="termAndCond">
             <div id="r-exp">
               <h3 id="h-exp">EXPERIENCE</h3>
-              <p id="p-exp">Minimum 1 year</p>
+              <p id="p-exp">3 Years</p>
             </div>
             <div id="r-empl">
               <h3 id="h-empl">EMPLOYEE TYPE</h3>
-              <p id="p-empl">Full time</p>
+              <p id="p-empl">Full-Time</p>
             </div>
             <div id="r-offer">
               <h3 id="h-offer">OFFER SALARY</h3>
-              <p id="p-offer">9,000,000IDR/Month</p>
+              <p id="p-offer">not specified</p>
             </div>
           </div>
 

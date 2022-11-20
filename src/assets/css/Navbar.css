@@ -107,6 +107,7 @@ nav {
 
 .login-btn button {
   background-color: white;
+  color: #983bff;
   border-radius: 5px;
   border: 1px solid #983bff;
   padding: 5px 25px 5px 25px;
@@ -120,10 +121,11 @@ nav {
   background-color: #983bff;
 }
 
-.logout-btn {
+.logout-btn button {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: #983bff;
   width: 100px;
   height: 30px;
   margin-top: 5px;
