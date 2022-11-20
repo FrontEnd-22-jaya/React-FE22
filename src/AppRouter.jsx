@@ -1,4 +1,5 @@
 import { Route, Routes } from "react-router-dom";
+import AppLayout from "./AppLayout";
 import JobVacancy from "./Pages/JobVacancy";
 import LandingPage from "./Pages/LandingPage";
 
@@ -13,14 +14,16 @@ const AppRouter = () => {
   return (
     <>
       <Routes>
-        <Route path="/" element={<LandingPage />} />
-
-        <Route path="/JobVacancy" element={<JobVacancy />} />
-        <Route path="/JobDetail/:id" element={<JobDetail />} />
-        <Route path="/Status" element={<Status />} />
-
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<SignUp />} />
+
+        <Route element={<AppLayout />}>
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/JobVacancy" element={<JobVacancy />} />
+          <Route path="/JobDetail/:id" element={<JobDetail />} />
+          <Route path="/Status" element={<Status />} />
+        </Route>
+        
       </Routes>
     </>
   );
