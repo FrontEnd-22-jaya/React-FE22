@@ -65,6 +65,10 @@ nav {
   color: rgb(101, 61, 120);
 }
 
+.section-right {
+  display: flex;
+}
+
 #profile {
   display: flex;
   align-items: center;
@@ -111,7 +115,22 @@ nav {
   cursor: pointer;
 }
 
+.login-btn button:hover {
+  color: white;
+  background-color: #983bff;
+}
+
+.logout-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 30px;
+  margin-top: 5px;
+  margin-left: 7px;
+}
+
 .logout-btn button {
+  background-color: white;
   cursor: pointer;
-  background-color: rgb(154, 93, 183);
 }

@@ -1,22 +1,3 @@
-/* hide footer and copyright */
-/* footer {
-  display: none;
-  opacity: 0;
-  pointer-events: none;
-  visibility: none;
-  z-index: -1;
-  overflow: hidden;
-}
-
-#copyright {
-  display: none;
-  opacity: 0;
-  pointer-events: none;
-  visibility: none;
-  z-index: -1;
-  overflow: hidden;
-} */
-
 .Login {
   display: flex;
   height: 85vh;
@@ -55,16 +36,17 @@
   height: 40px;
   margin-top: 5px;
   cursor: pointer;
+  font-weight: 500;
+  color: #983bff;
 }
 
-.signup button span {
-  font-weight: 700;
-  color: #983bff;
+.signup button:hover {
+  background-color: #983bff;
+  color: white;
 }
 
 .login-form {
   margin: 5em;
-  /* background-color: blue; */
 }
 
 .login-title h2 {
@@ -72,7 +54,6 @@
 }
 
 .login-input {
-  /* background-color: aquamarine; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -96,9 +77,11 @@
   height: 35px;
   border-radius: 5px;
   cursor: pointer;
-  box-shadow: grey;
+}
 
-  z-index: 10;
+.input-element-button button:hover {
+  background-color: #5d269c;
+  border: 1px solid #983bff;
 }
 
 .error-msg {
