@@ -58,26 +58,26 @@ const JobDetail = () => {
           </div>
           <div id="jobAddress">
             <h1 id="h-posisi">
-              <b>{jobs.name}</b>
+              <b>UI/UX Design</b>
             </h1>
             <div id="h-company">
-              <h4 id="company">{jobs.company}</h4>
-              <h4 id="address">{jobs.city}</h4>
+              <h4 id="company">Facebook</h4>
+              <h4 id="address">Sumedang</h4>
             </div>
           </div>
 
           <div id="termAndCond">
             <div id="r-exp">
               <h3 id="h-exp">EXPERIENCE</h3>
-              <p id="p-exp">{jobs.exp}</p>
+              <p id="p-exp">3 Years</p>
             </div>
             <div id="r-empl">
               <h3 id="h-empl">EMPLOYEE TYPE</h3>
-              <p id="p-empl">{jobs.employee}</p>
+              <p id="p-empl">Full-Time</p>
             </div>
             <div id="r-offer">
               <h3 id="h-offer">OFFER SALARY</h3>
-              <p id="p-offer">{jobs.salary}</p>
+              <p id="p-offer">not specified</p>
             </div>
           </div>
 
