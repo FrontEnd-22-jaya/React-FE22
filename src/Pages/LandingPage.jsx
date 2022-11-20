@@ -5,20 +5,23 @@ import Section_3 from "../Components/Landing Page/Section_3";
 import Section_4 from "../Components/Landing Page/Section_4";
 import Section_5 from "../Components/Landing Page/Section_5";
 import Section_6 from "../Components/Landing Page/Section_6";
+import Navbar from "../Components/Navbar";
 
 const LandingPage = () => {
   return <>
-
-  <Section_1/> 
-  <Section_2/>
-  <Section_3/>
-  <Section_6/>
-  <Section_4/>
-  <Section_5/>
-
-<img src="../namagambar" alt="" /> 
   
-  </>;
+    <Navbar />
+    
+    <Section_1/> 
+    <Section_2/>
+    <Section_3/>
+    <Section_6/>
+    <Section_4/>
+    <Section_5/>
+
+    <img src="../namagambar" alt="" /> 
+  
+  </>
 };
 
 export default LandingPage;
