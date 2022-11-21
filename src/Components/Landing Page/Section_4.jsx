@@ -16,12 +16,6 @@ const Section_4 = () => {
           <Card />
           <Card />
         </div>
-        <div className="cards">
-          <Card />
-        </div>
-        <div className="cards">
-          <Card />
-        </div>
 
         <div className="dots">
           <div type="radio" name="dot" id="one"></div>
@@ -35,7 +29,6 @@ const Section_4 = () => {
         </div>
       </div>
     </div>
-
   );
 };
 
