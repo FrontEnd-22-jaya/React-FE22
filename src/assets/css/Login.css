@@ -61,7 +61,7 @@
 }
 
 .input-element input {
-  width: 270px;
+  width: 300px;
   height: 35px;
   margin-bottom: 15px;
   border-radius: 5px;
@@ -69,6 +69,9 @@
 }
 
 .input-element-button button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: #983bff;
   color: white;
   font-weight: 500;
@@ -91,6 +94,7 @@
   margin-left: 3px;
 }
 
+/* responsive */
 @media only screen and (max-width: 768px) {
   .section-image {
     display: none;
@@ -123,7 +127,7 @@
   }
 
   .input-element input {
-    max-width: 150px;
+    width: 165px;
     height: 25px;
     margin-bottom: 10px;
     font-size: 10px;

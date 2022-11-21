@@ -11,7 +11,7 @@ import Navbar from "../Components/Navbar";
 
 const LandingPage = () => {
   return (
-    <div>
+    <>
       <Navbar />
 
       <div id="sec1" className="LP_wrap">
@@ -29,7 +29,7 @@ const LandingPage = () => {
         <Section_4 />
         <Section_5 />
       </div>
-    </div>
+    </>
   );
 };
 

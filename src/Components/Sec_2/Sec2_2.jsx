@@ -1,13 +1,12 @@
-import React from 'react'
+import React from "react";
 
 const Sec2_2 = () => {
   return (
     <div className="flex-item">
       <h5>More relationships</h5>
-      <p>Lorem ipsum dolor sit amet,
-        consectetur adipiscing elit. Sed do eiusmod tempor.</p>
+      <p>You can find job with any positions and you can filter based on what you want</p>
     </div>
-  )
-}
+  );
+};
 
-export default Sec2_2
+export default Sec2_2;
