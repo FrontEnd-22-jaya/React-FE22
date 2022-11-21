@@ -20,6 +20,7 @@ const Section_4 = () => {
         <div className="cards">
           <Card />
         </div>
+
         <div className="dots">
           <div type="radio" name="dot" id="one"></div>
           <div type="radio" name="dot" id="two"></div>
@@ -32,6 +33,7 @@ const Section_4 = () => {
         </div>
       </div>
     </div>
+
   );
 };
 

@@ -6,7 +6,7 @@ const Navbar = () => {
 
   function logOut() {
     localStorage.clear();
-    window.location.href = "/JobVacancy";
+    window.location.href = "/";
   }
   return (
     <nav id="sticky">

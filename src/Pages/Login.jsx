@@ -84,7 +84,7 @@ const Login = () => {
         }
       );
 
-      window.location.href = "/JobVacancy";
+      window.location.href = "/";
 
       result = await result.json();
       localStorage.setItem("user-info", JSON.stringify(result));
