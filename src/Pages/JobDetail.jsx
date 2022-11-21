@@ -34,8 +34,8 @@ const JobDetail = () => {
 
   const [jobs, setJobs] = useState([]);
   console.log(jobs);
-  const [errors, setErrors] = useState([]);
-  const [loading, setLoading] = useState(false);
+  // const [errors, setErrors] = useState([]);
+  // const [loading, setLoading] = useState(false);
 
   async function GetDataJobs() {
     try {
