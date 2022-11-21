@@ -1,5 +1,5 @@
-.LP_wrap {
-  overflow: hidden;
+.LandingPage {
+  overflow-x: hidden;
 }
 
 html {
@@ -11,6 +11,11 @@ button {
   color: #ffffff;
   padding: 10px 15px;
   border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #5d269c;
 }
 
 #profile {
@@ -87,7 +92,8 @@ button {
 
 .flex-item {
   flex-basis: 100%;
-  max-height: 150px;
+  height: 170px;
+  text-align: justify;
   margin-left: 25px;
   margin-right: 25px;
   background: #ffffff;
@@ -146,7 +152,8 @@ button {
   /* height: 61px;
     left: 730px;
     top: 1465px; */
-  font-weight: 600;
+  font-weight: 700;
+
   font-size: 36px;
   color: #000000;
 }
@@ -161,14 +168,18 @@ button {
   padding-bottom: 35px;
 }
 
+.checkbox {
+  /* background-color: blue; */
+  margin-top: 50px;
+}
+
 .checkbox i {
   display: flex;
   width: 500px;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 20px;
-  padding-right: 20px;
-  padding-bottom: 5px;
-  padding-top: 20px;
+  padding-bottom: 15px;
+  font-family: "Poppins", sans-serif;
 }
 
 /* categories */
@@ -209,7 +220,8 @@ button {
   display: flex;
   justify-content: space-around;
   padding-top: 90px;
-  padding-left: 90px;
+  padding-left: 120px;
+
   padding-right: 120px;
 }
 
@@ -228,6 +240,7 @@ button {
   font-weight: 400;
   font-size: 20px;
   padding-bottom: 70px;
+  margin-bottom: 70px;
 }
 
 .dropCv-img {
@@ -236,37 +249,38 @@ button {
 }
 
 /* css saysJob */
+
 .saysJob {
   position: relative;
-  display: flex;
-
   margin-bottom: 20px;
   margin-top: 150px;
+  /* background-color: #5d269c; */
 }
 
 .saysJob-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  position: relative;
 }
 
 .saysJob-text h3 {
-  width: 500px;
+  /* width: 514px; */
+
   text-align: center;
   /* padding-left: 500px; */
   /* height: 61px;
     left: 730px;
     top: 1465px; */
-  font-weight: 600;
+  font-weight: 700;
+
   font-size: 36px;
   color: #000000;
 }
 
 .saysJob-text p {
-  width: 450px;
+  /* width: 450px;
   height: 50px;
   left: 730px;
-  top: 726px;
+  top: 726px; */
+
   /* padding-left: 520px; */
   font-weight: 400;
   font-size: 20px;
@@ -285,9 +299,8 @@ button {
 
 .main-card {
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  width: 200%;
+  justify-content: space-evenly;
+  /* width: 200%; */
   transition: 1s;
   justify-content: center;
 }
@@ -308,7 +321,8 @@ button {
   /* padding-right: 50px; */
 }
 .main-card .cards .card {
-  width: calc(100% / 3 - 10px);
+  /* width: calc(100% / 3 - 10px); */
+
   background: #d1a8ff;
   border-radius: 12px;
   padding: 30px;
@@ -454,7 +468,7 @@ input[type="radio"] {
   padding: 0;
   height: 0;
   overflow: hidden;
-  width: 400px;
+  width: auto;
 }
 
 .isi:target {

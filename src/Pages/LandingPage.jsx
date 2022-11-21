@@ -11,7 +11,9 @@ import Navbar from "../Components/Navbar";
 
 const LandingPage = () => {
   return (
-    <>
+
+    <div className="LandingPage">
+
       <Navbar />
 
       <div id="sec1" className="LP_wrap">

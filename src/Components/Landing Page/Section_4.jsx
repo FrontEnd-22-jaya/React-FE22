@@ -3,10 +3,10 @@ import Card from "../Sec_4/Card";
 
 const Section_4 = () => {
   return (
-    <>
+    <div className="section4">
       <div className="saysJob">
         <div className="saysJob-text">
-          <h3>What Job Seeker Said About Us</h3>
+          <h3>What Job Seeker Says About Us</h3>
           <p>Various positive reviews from workers at Jobsidian</p>
         </div>
       </div>
@@ -16,6 +16,13 @@ const Section_4 = () => {
           <Card />
           <Card />
         </div>
+        <div className="cards">
+          <Card />
+        </div>
+        <div className="cards">
+          <Card />
+        </div>
+
         <div className="dots">
           <div type="radio" name="dot" id="one"></div>
           <div type="radio" name="dot" id="two"></div>
@@ -27,7 +34,8 @@ const Section_4 = () => {
           <label htmlFor="two" className="two"></label>
         </div>
       </div>
-    </>
+    </div>
+
   );
 };
 
