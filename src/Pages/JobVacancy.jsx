@@ -9,8 +9,8 @@ const JobVacancy = () => {
     <>
       <Navbar />
       <div id="container">
-        <SearchBar />
-        <Categories />
+        {/* <SearchBar />
+        <Categories /> */}
         <Recommendation />
       </div>
     </>

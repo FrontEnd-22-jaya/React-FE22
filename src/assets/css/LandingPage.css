@@ -2,6 +2,10 @@
   overflow-x: hidden;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 button {
   background-color: #983bff;
   color: #ffffff;
