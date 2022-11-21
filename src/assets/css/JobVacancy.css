@@ -281,6 +281,15 @@
   color: blueviolet;
 }
 
+.bxs-bookmark-plus {
+  color: rgb(178, 123, 230);
+  font-size: 24px;
+  transition: all 0.3s ease-in-out;
+}
+.bxs-bookmark-plus:hover {
+  color: blueviolet;
+}
+
 @keyframes loadingMuter {
   0% {
     transform: rotate(0deg);
@@ -331,7 +340,7 @@
 .bx-loader {
   font-size: 30px;
   transition: all 0.3s infinite;
-  animation: loadingMuter 2s ease;
+  animation: loadingMuter 2s infinite;
 }
 
 #loading span,
@@ -342,13 +351,25 @@
 }
 
 #error p {
+  background-color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px 40px;
   font-size: 12px;
   border: 2px solid gray;
+  transition: all 0.5s ease;
+}
+#error p:hover {
+  box-shadow: 12px 4px 10px rgb(167, 167, 167);
+  color: rgb(255, 61, 61);
+  border: 2px solid rgb(255, 61, 61);
 }
 
 #error p span {
-  font-size: 24px;
-  color: gray;
+  font-size: 20px;
 }
 
 #loading span,

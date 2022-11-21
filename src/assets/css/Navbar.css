@@ -1,3 +1,12 @@
+@keyframes down {
+  from {
+    transform: translateY(-200px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+
 /*--------------------------------------------Navbar-setting------------------------------------*/
 nav {
   background-color: rgba(255, 255, 255, 0.9);
@@ -8,6 +17,7 @@ nav {
   padding: 12px 32px;
   margin-bottom: 25px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+
   backdrop-filter: blur(8px);
   z-index: 10;
 }
@@ -16,6 +26,7 @@ nav {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+  right: 0;
 }
 
 #logo h3 {
@@ -104,6 +115,7 @@ nav {
   height: 40px;
   margin-top: 5px;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .login-btn button:hover {

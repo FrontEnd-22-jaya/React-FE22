@@ -13,6 +13,8 @@ const Section_4 = () => {
       <div className="main-card">
         <div className="cards">
           <Card />
+          <Card />
+          <Card />
         </div>
         <div className="dots">
           <div type="radio" name="dot" id="one"></div>
@@ -21,7 +23,7 @@ const Section_4 = () => {
         </div>
 
         <div className="button">
-          <label htmlfor="one" className="active one"></label>
+          <label htmlFor="one" className="active one"></label>
           <label htmlFor="two" className="two"></label>
         </div>
       </div>
