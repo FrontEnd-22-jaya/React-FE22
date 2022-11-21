@@ -8,8 +8,9 @@ const JOB_EP = `https://634f64bddf22c2af7b504acd.mockapi.io/jobsidian/jobs `;
 
 const Job = () => {
   const [jobs, setJobs] = useState([]);
-  const [errors, setErrors] = useState([]);
+  const [errors, setErrors] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [isBookmark, setIsBookmark] = useState(false);
 
   const dispatch = useDispatch();
   const navigation = useNavigate();
@@ -23,6 +24,7 @@ const Job = () => {
       setLoading(true);
       console.log(resp.data);
     } catch (e) {
+      errors(true);
       setErrors(e.message);
       console.log(e.code);
     }
@@ -33,7 +35,12 @@ const Job = () => {
   }, []);
 
   const handleClickBookmark = () => {
-    console.log("dapat cuy");
+    setIsBookmark(!isBookmark);
+    console.log("bookmark cuy");
+  };
+
+  const handleCancelBookmark = () => {
+    console.log("cancel cuy");
   };
 
   const handleDetail = (id) => {
@@ -42,7 +49,14 @@ const Job = () => {
 
   return (
     <>
-      {loading ? (
+      {errors ? (
+        <div id="error">
+          <p>
+            <span>{errors}</span>
+            PLease check your connections!
+          </p>
+        </div>
+      ) : loading ? (
         jobs.map((item) => (
           <div key={item.id} data-aos="fade-up">
             <div className="job">
@@ -79,7 +93,15 @@ const Job = () => {
                   </button>
                 </div>
                 <div onClick={handleClickBookmark} id="icon-save">
-                  <i className="bx bx-bookmark-plus"></i>
+                  {isBookmark ? (
+                    <span onClick={handleCancelBookmark} id="icon-bookmark">
+                      <i className="bx bxs-bookmark-plus"></i>
+                    </span>
+                  ) : (
+                    <span id="icon-yetBookmark">
+                      <i className="bx bx-bookmark-plus"></i>
+                    </span>
+                  )}
                 </div>
               </div>
             </div>
