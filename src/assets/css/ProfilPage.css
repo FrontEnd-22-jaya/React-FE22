@@ -4,10 +4,12 @@
   justify-content: space-evenly;
 }
 
+/* wadah utk menu-box */
 .profile-menu {
   flex: 1;
 }
 
+/* box warna krem di sebelah kiri yg nampilin menu profile, saved offers, up docs, logout */
 .menu-box {
   background-color: #fff6eb;
   border-radius: 12px;
@@ -30,6 +32,7 @@
   background-color: #efe7de;
 }
 
+/* hide icon bold yg akan dibuat visible cm kalo link active */
 .fi.fi-sr-user,
 .fi.fi-sr-bookmark,
 .fi.fi-br-upload,
@@ -39,13 +42,13 @@
   margin-left: -15px;
 }
 
-/* Specific styles for non-active links */
+/* style opsi menu kalau ga aktif */
 .link {
   color: black;
   font-weight: 300;
 }
 
-/* Specific styles for active links */
+/***** style opsi menu kalau lagi aktif *****/
 .link-active {
   color: black;
 }
@@ -63,11 +66,13 @@
 .link-active .fi.fi-br-sign-out-alt {
   visibility: visible;
 }
+/***** end of style opsi menu kalau lagi aktif *****/
 
 .profile-container {
   flex: 3;
 }
 
+/* box warna ungu muda di sebelah kanan */
 .profile-box {
   background-color: #f5ecff;
   border-radius: 15px;
@@ -99,6 +104,25 @@
   font-size: 30px;
 }
 
-.fi.fi-rr-user {
-  font-weight: 800;
+.profile-info {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 200px 30px 200px;
+}
+
+.profile-info-left ul li,
+.profile-info-right ul li {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.profile-info-left ul li label,
+.profile-info-right ul li label {
+  font-weight: 700;
+}
+
+.profile-info-left ul li span,
+.profile-info-right ul li span {
+  font-weight: 500;
 }
