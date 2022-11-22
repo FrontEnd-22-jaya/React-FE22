@@ -1,4 +1,4 @@
-.LandingPage {
+.LP_wrap {
   overflow-x: hidden;
 }
 
@@ -313,7 +313,7 @@ button:hover {
   margin-left: -100%;
 }
 .main-card .cards {
-  width: calc(100% / 2 - 10px);
+  /* width: calc(100% / 2 - 10px); */
   display: flex;
   /* flex-wrap: wrap; */
   margin: 0 20px;
@@ -321,11 +321,10 @@ button:hover {
   /* padding-right: 50px; */
 }
 .main-card .cards .card {
-  /* width: calc(100% / 3 - 10px); */
-
   background: #d1a8ff;
   border-radius: 12px;
   padding: 30px;
+  margin: 10px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
   transition: all 0.4s ease;
 }

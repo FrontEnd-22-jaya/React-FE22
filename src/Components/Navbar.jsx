@@ -8,6 +8,7 @@ const Navbar = () => {
     localStorage.clear();
     window.location.href = "/";
   }
+
   return (
     <nav id="sticky">
       <div id="logo">
@@ -30,9 +31,9 @@ const Navbar = () => {
                 <i> Users</i>
               </h4>
               <div id="iconProfile">
-                <a href="">
+                <Link to="/ProfilPage/">
                   <i className="bx bxs-user-circle"></i>
-                </a>
+                </Link>
               </div>
             </div>
             <div className="logout-btn">
