@@ -3,10 +3,11 @@ import loginimg from "../assets/image/login.png";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import Navbar from "../Components/Navbar";
-import { useDispatch } from "react-redux";
-import { login } from "../Redux/Features/userSlice";
+import { useDispatch, useSelector } from "react-redux";
+import { login, selectUser } from "../Redux/Features/userSlice";
 
 const Login = () => {
+  const user = useSelector(selectUser);
   const [email, setEmail] = useState("");
   const [emailError, setEmailError] = useState("");
 
@@ -70,6 +71,10 @@ const Login = () => {
           loggedIn: true,
         })
       );
+
+      console.log(user);
+      // localStorage.setItem("user-info", JSON.stringify(user));
+
       setEmail("");
       setPassword("");
 
