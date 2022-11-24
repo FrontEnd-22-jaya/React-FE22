@@ -46,6 +46,7 @@ const Login = () => {
   useEffect(() => {
     if (user !== null) {
       localStorage.setItem("user-info", JSON.stringify(user));
+      window.location.href = "/";
     }
   }, [user]);
 
