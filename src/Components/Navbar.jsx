@@ -28,7 +28,7 @@ const Navbar = () => {
           <div className="section-right">
             <div id="profile">
               <h4 id="nameProfile">
-                <i> Users</i>
+                <i>{user.password}</i>
               </h4>
               <div id="iconProfile">
                 <Link to="/ProfilPage/">

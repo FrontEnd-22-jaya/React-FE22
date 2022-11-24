@@ -1,7 +1,7 @@
 import "../assets/css/Login.css";
 import loginimg from "../assets/image/login.png";
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Navbar from "../Components/Navbar";
 import { useDispatch, useSelector } from "react-redux";
 import { login, selectUser } from "../Redux/Features/userSlice";
@@ -43,6 +43,12 @@ const Login = () => {
     }
   };
 
+  useEffect(() => {
+    if (user !== null) {
+      localStorage.setItem("user-info", JSON.stringify(user));
+    }
+  }, [user]);
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -71,9 +77,6 @@ const Login = () => {
           loggedIn: true,
         })
       );
-
-      console.log(user);
-      // localStorage.setItem("user-info", JSON.stringify(user));
 
       setEmail("");
       setPassword("");
