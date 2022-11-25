@@ -47,6 +47,7 @@ const Login = () => {
     if (user !== null) {
       localStorage.setItem("user-info", JSON.stringify(user));
       window.location.href = "/";
+      console.log(user);
     }
   }, [user]);
 
@@ -79,10 +80,9 @@ const Login = () => {
         })
       );
 
+      console.log(user);
       setEmail("");
       setPassword("");
-
-      // window.location.href = "/";
     }
   };
 

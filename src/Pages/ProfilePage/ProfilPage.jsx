@@ -7,6 +7,7 @@ import Navbar from "../../Components/Navbar";
 import ProfileMenu from "../../Components/ProfilePage/ProfileMenu";
 
 const ProfilPage = () => {
+  let user = JSON.parse(localStorage.getItem("user-info"));
   return (
     <>
       <Navbar />
@@ -17,7 +18,7 @@ const ProfilPage = () => {
         <div className="profile-container">
           <div className="profile-box">
             <div className="edit-profile">
-              <span>Edit Profile</span>
+              <button>Edit Profile</button>
             </div>
             <div className="profile-show">
               <img src={pfp} alt="" />
@@ -52,7 +53,7 @@ const ProfilPage = () => {
                   </li>
                   <li>
                     <label htmlFor="email">Email</label>
-                    <span>user@gmail.com</span>
+                    <span>{user.email}</span>
                   </li>
                 </ul>
               </div>
