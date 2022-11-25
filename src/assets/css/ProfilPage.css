@@ -126,3 +126,52 @@
 .profile-info-right ul li span {
   font-weight: 500;
 }
+
+.detil-info {
+  margin: 0px 70px 0px 70px;
+}
+
+.detil-info span {
+  text-decoration: underline;
+  font-size: 20px;
+}
+
+.detil-info .about-me {
+  margin: 20px 0px 20px 0px;
+  padding: 20px 30px 20px 30px;
+  border-radius: 10px;
+  background-color: #fff6eb;
+}
+
+.detil-info .about-me h4 {
+  font-weight: 600;
+}
+
+.detil-info .about-me p {
+  text-align: justify;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.detil-info .about-me button {
+  margin-top: 10px;
+  background-color: #fff6eb;
+  display: flex;
+}
+
+.detil-info .about-me button i {
+  color: black;
+  font-size: 16px;
+}
+
+.detil-info .about-me button span {
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  margin-left: 10px;
+  color: black;
+}
+
+.detil-info .about-me button:hover {
+  background-color: #d1c9bf;
+}

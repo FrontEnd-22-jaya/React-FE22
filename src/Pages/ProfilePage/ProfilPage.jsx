@@ -58,7 +58,20 @@ const ProfilPage = () => {
                 </ul>
               </div>
             </div>
-            <div className="detil-info"></div>
+            <div className="detil-info">
+              <span>Detil Info</span>
+              <div className="about-me">
+                <h4>About Me</h4>
+                <button>
+                  <i class="fi fi-rr-add"></i>
+                  <span>Add Description</span>
+                </button>
+                {/* <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus debitis cupiditate error asperiores hic rerum laborum iure excepturi sit. Optio aspernatur, ratione animi voluptate iusto eveniet officiis aliquid ducimus
+                  doloremque.
+                </p> */}
+              </div>
+            </div>
           </div>
         </div>
       </div>

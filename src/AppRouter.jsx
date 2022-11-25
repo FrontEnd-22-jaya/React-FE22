@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import { Navigate, Route, Routes } from "react-router-dom";
 import AppLayout from "./AppLayout";
 import JobVacancy from "./Pages/JobVacancy";
 import LandingPage from "./Pages/LandingPage";
@@ -26,7 +26,7 @@ const AppRouter = () => {
           <Route path="/ProfilPage">
             <Route path="/ProfilPage/" element={<ProfilPage />} />
             <Route path="/ProfilPage/saved-offers" element={<SavedOffers />} />
-            <Route path="/ProfilPage/up-doc" element={<UploadDocuments />} />
+            <Route path="/ProfilPage/up-doc" element={localStorage.getItem("user-info") ? <UploadDocuments /> : <Navigate replace to={"/login"} />} />
           </Route>
         </Route>
       </Routes>
